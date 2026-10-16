@@ -8,9 +8,9 @@
   var D2R = Math.PI / 180;
   var FONT = '"Cormorant Garamond", "Noto Serif JP", "Noto Serif KR", "Noto Serif SC", "Noto Naskh Arabic", Georgia, serif';
   var C = {
-    ink: '20,26,38',
-    accent: '122,46,58',
-    champagne: '216,196,160'
+    ink: '30,33,40',
+    accent: '123,88,91',
+    champagne: '203,189,163'
   };
 
   function clamp(v, a, b) { return v < a ? a : v > b ? b : v; }
@@ -137,15 +137,15 @@
 
     // Soft light behind the sphere
     var g = ctx.createRadialGradient(this.cx - R * 0.35, this.cy - R * 0.4, R * 0.1, this.cx, this.cy, R * 1.25);
-    g.addColorStop(0, 'rgba(255,255,255,0.55)');
-    g.addColorStop(0.6, 'rgba(' + C.champagne + ',0.16)');
+    g.addColorStop(0, 'rgba(255,255,255,0.4)');
+    g.addColorStop(0.6, 'rgba(' + C.champagne + ',0.09)');
     g.addColorStop(1, 'rgba(' + C.champagne + ',0)');
     ctx.fillStyle = g;
     ctx.beginPath(); ctx.arc(this.cx, this.cy, R * 1.25, 0, Math.PI * 2); ctx.fill();
 
     // Outline + outer technical rings
     ctx.lineWidth = 1 * dpr;
-    ctx.strokeStyle = 'rgba(' + C.ink + ',0.35)';
+    ctx.strokeStyle = 'rgba(' + C.ink + ',0.24)';
     ctx.beginPath(); ctx.arc(this.cx, this.cy, R, 0, Math.PI * 2); ctx.stroke();
     ctx.strokeStyle = 'rgba(' + C.ink + ',0.10)';
     ctx.setLineDash([2 * dpr, 6 * dpr]);
@@ -175,15 +175,15 @@
       }
     }
     ctx.lineWidth = 0.8 * dpr;
-    for (i = -60; i <= 60; i += 30) (function (lat) { line(function (u) { return [lat, -180 + u * 360]; }, 90, 0.16, 0.035); })(i);
-    for (i = 0; i < 180; i += 20) (function (lon) { line(function (u) { return [-90 + u * 180, lon]; }, 60, 0.13, 0.03); })(i);
-    for (i = 180; i < 360; i += 20) (function (lon) { line(function (u) { return [-90 + u * 180, lon]; }, 60, 0.13, 0.03); })(i);
+    for (i = -60; i <= 60; i += 30) (function (lat) { line(function (u) { return [lat, -180 + u * 360]; }, 90, 0.10, 0.025); })(i);
+    for (i = 0; i < 180; i += 20) (function (lon) { line(function (u) { return [-90 + u * 180, lon]; }, 60, 0.085, 0.02); })(i);
+    for (i = 180; i < 360; i += 20) (function (lon) { line(function (u) { return [-90 + u * 180, lon]; }, 60, 0.085, 0.02); })(i);
 
     // Dots
     for (i = 0; i < this.dots.length; i++) {
       p = this.project(this.dots[i].lat, this.dots[i].lon, 1);
       if (p.z <= 0) continue;
-      ctx.fillStyle = 'rgba(' + C.ink + ',' + (0.08 + p.z * 0.28) + ')';
+      ctx.fillStyle = 'rgba(' + C.ink + ',' + (0.05 + p.z * 0.18) + ')';
       ctx.fillRect(p.x - 0.7 * dpr, p.y - 0.7 * dpr, 1.4 * dpr, 1.4 * dpr);
     }
 
@@ -202,7 +202,7 @@
       for (j = 1; j <= n; j++) {
         var a0 = this.project(arc[j - 1].lat, arc[j - 1].lon, arc[j - 1].r);
         var a1 = this.project(arc[j].lat, arc[j].lon, arc[j].r);
-        var alpha = (a0.vis && a1.vis) ? (isActive ? 0.95 : 0.6) : 0.08;
+        var alpha = (a0.vis && a1.vis) ? (isActive ? 0.85 : 0.42) : 0.05;
         ctx.strokeStyle = 'rgba(' + C.accent + ',' + alpha + ')';
         ctx.beginPath(); ctx.moveTo(a0.x, a0.y); ctx.lineTo(a1.x, a1.y); ctx.stroke();
         last = a1;

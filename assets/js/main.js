@@ -139,23 +139,25 @@
         '<svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true">' +
         '<defs>' +
         '<linearGradient id="' + id + 'a" x1="0" y1="0" x2="0" y2="1">' +
-        '<stop offset="0" stop-color="hsl(' + h + ',24%,82%)"/><stop offset="1" stop-color="hsl(' + h + ',20%,52%)"/></linearGradient>' +
+        '<stop offset="0" stop-color="hsl(' + h + ',12%,86%)"/><stop offset="1" stop-color="hsl(' + h + ',10%,60%)"/></linearGradient>' +
         '<radialGradient id="' + id + 'b" cx="0.3" cy="0.2" r="0.8">' +
         '<stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>' +
         '<linearGradient id="' + id + 'c" x1="0" y1="0" x2="0" y2="1">' +
-        '<stop offset="0" stop-color="hsl(' + h + ',18%,34%)" stop-opacity=".75"/><stop offset="1" stop-color="hsl(' + h + ',22%,20%)" stop-opacity=".95"/></linearGradient>' +
+        '<stop offset="0" stop-color="hsl(' + h + ',9%,40%)" stop-opacity=".7"/><stop offset="1" stop-color="hsl(' + h + ',10%,26%)" stop-opacity=".9"/></linearGradient>' +
+        '<filter id="' + id + 'd" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.005 0.009" numOctaves="1" seed="' + s + '" result="n"/>' +
+        '<feDisplacementMap in="SourceGraphic" in2="n" scale="0" xChannelSelector="R" yChannelSelector="G"/></filter>' +
         '</defs>' +
         '<rect width="400" height="500" fill="url(#' + id + 'a)"/>' +
         '<g fill="none" stroke="#fff" stroke-opacity=".22" stroke-width="1">' +
         '<circle cx="200" cy="215" r="120"/><circle cx="200" cy="215" r="165" stroke-dasharray="2 6"/><circle cx="200" cy="215" r="210"/>' +
         '<path d="M0 215H400M200 0V500" stroke-opacity=".12"/></g>' +
-        '<g transform="rotate(' + tilt + ' 200 420)">' +
+        '<g filter="url(#' + id + 'd)"><g transform="rotate(' + tilt + ' 200 420)">' +
         (long
           ? '<path d="M128 214 C 120 128, 280 128, 272 214 C 270 262, 292 318, 300 350 C 250 336, 150 336, 100 350 C 108 318, 130 262, 128 214 Z" fill="url(#' + id + 'c)" opacity=".5"/>'
           : '<path d="M138 196 C 140 126, 260 126, 262 196 C 248 162, 152 162, 138 196 Z" fill="url(#' + id + 'c)" opacity=".45"/>') +
         '<path d="M200 128 C 243 128 264 162 264 206 C 264 248 246 278 228 292 L 230 326 C 298 340 350 388 364 520 L 36 520 C 50 388 102 340 170 326 L 172 292 C 154 278 136 248 136 206 C 136 162 157 128 200 128 Z" fill="url(#' + id + 'c)" opacity=".5"/>' +
         '<path d="M200 128 C 243 128 264 162 264 206 C 264 248 246 278 228 292 L 230 326 C 298 340 350 388 364 520 M36 520 C 50 388 102 340 170 326 L 172 292 C 154 278 136 248 136 206 C 136 162 157 128 200 128" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="1"/>' +
-        '</g>' +
+        '</g></g>' +
         '<rect width="400" height="500" fill="url(#' + id + 'b)"/>' +
         '</svg>';
       p.innerHTML = svg + '<span class="portrait__glyph" lang="' + (p.getAttribute('data-glyph-lang') || '') + '">' + esc(p.getAttribute('data-glyph') || '') + '</span>';
@@ -305,9 +307,9 @@
   function revealChars(el, quick) {
     var cs = el.querySelectorAll('.sc');
     if (!ANIM) return;
-    gsap.fromTo(cs, { yPercent: 115, rotate: 4 }, {
-      yPercent: 0, rotate: 0, duration: quick ? 0.9 : 1.5, ease: 'expo.out',
-      stagger: { each: quick ? 0.008 : 0.022 }
+    gsap.fromTo(cs, { yPercent: 115, rotate: 5, opacity: 0, filter: 'blur(8px)' }, {
+      yPercent: 0, rotate: 0, opacity: 1, filter: 'blur(0px)', duration: quick ? 1.1 : 1.9, ease: 'expo.out',
+      stagger: { each: quick ? 0.01 : 0.028 }, clearProps: 'filter'
     });
   }
   function setupSplit(el) {
@@ -327,7 +329,7 @@
     var ws = el.querySelectorAll('.rw'), n = Math.round(progress * ws.length);
     for (var i = 0; i < ws.length; i++) {
       var on = i < n;
-      if (ws[i]._on !== on) { ws[i]._on = on; ws[i].style.color = on ? 'rgba(20,26,38,1)' : 'rgba(20,26,38,0.18)'; }
+      if (ws[i]._on !== on) { ws[i]._on = on; ws[i].style.color = on ? 'rgba(30,33,40,1)' : 'rgba(30,33,40,0.16)'; }
     }
   }
   function setupWordScrub(el) {
