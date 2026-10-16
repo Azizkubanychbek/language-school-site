@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Maison Babel — курсы иностранных языков в Бишкеке</title>
+  <meta name="description" content="Английский, немецкий, корейский, китайский и ещё 6 языков. Группы до 6 человек, индивидуально, для детей, IELTS. Бесплатный пробный урок.">
+  <meta name="theme-color" content="#c8102e">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23c8102e'/%3E%3Cpath d='M9 22h14M11 18h10M13 14h6M15 10h2' stroke='%23fff' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+  <script>
+    (function () {
+      var d = document.documentElement; d.className += ' js';
+      try { var l = localStorage.getItem('mb-simple-lang'); if (l === 'en' || l === 'ky' || l === 'ru') d.lang = l; } catch (e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@500;700&family=Noto+Sans+KR:wght@500;700&family=Noto+Sans+SC:wght@500;700&family=Noto+Sans+Arabic:wght@500;700&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="a11y.skip">Перейти к содержанию</a>
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="wrap topbar__in">
+      <span class="topbar__item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span data-i18n="top.addr">Бишкек, бульвар Эркиндик, 35</span></span>
+      <span class="topbar__item topbar__hours"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span data-i18n="top.hours">Пн–Сб · 9:00–21:00</span></span>
+      <a class="topbar__item topbar__phone" href="tel:+996312900000"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>+996 312 90 00 00</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="wrap header__in">
+      <a class="logo" href="#top" data-i18n-attr="aria-label:a11y.home" aria-label="Maison Babel — на главную">
+        <span class="logo__mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M9 22h14M11 18h10M13 14h6M15 10h2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+        <span class="logo__text">Maison Babel<small>School of languages</small></span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#languages" data-i18n="nav.languages">Языки</a>
+        <a href="#formats" data-i18n="nav.formats">Расписание</a>
+        <a href="#prices" data-i18n="nav.prices">Цены</a>
+        <a href="#teachers" data-i18n="nav.teachers">Преподаватели</a>
+        <a href="#reviews" data-i18n="nav.reviews">Отзывы</a>
+        <a href="#faq" data-i18n="nav.faq">Вопросы</a>
+        <a href="#contact" data-i18n="nav.contact">Контакты</a>
+      </nav>
+      <div class="header__tools">
+        <div class="langs" role="group" data-i18n-attr="aria-label:a11y.lang" aria-label="Язык сайта">
+          <button type="button" data-set-lang="ru" aria-pressed="true" lang="ru">RU</button>
+          <button type="button" data-set-lang="en" aria-pressed="false" lang="en">EN</button>
+          <button type="button" data-set-lang="ky" aria-pressed="false" lang="ky">KY</button>
+        </div>
+        <a class="btn btn--red btn--sm header__cta" href="#signup" data-i18n="cta.signup">Записаться</a>
+        <button class="burger" type="button" aria-expanded="false" aria-controls="menu" data-i18n-attr="aria-label:a11y.menu" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="menu" id="menu" hidden>
+      <nav class="menu__nav" aria-label="Mobile">
+        <a href="#languages" data-i18n="nav.languages">Языки</a>
+        <a href="#formats" data-i18n="nav.formats">Расписание</a>
+        <a href="#prices" data-i18n="nav.prices">Цены</a>
+        <a href="#teachers" data-i18n="nav.teachers">Преподаватели</a>
+        <a href="#reviews" data-i18n="nav.reviews">Отзывы</a>
+        <a href="#faq" data-i18n="nav.faq">Вопросы</a>
+        <a href="#contact" data-i18n="nav.contact">Контакты</a>
+      </nav>
+      <a class="btn btn--red btn--block" href="#signup" data-i18n="cta.trial">Записаться на бесплатный урок</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="badge rv"><i aria-hidden="true"></i><span data-i18n="hero.badge">Открыт набор в группы на ноябрь</span></p>
+          <h1 class="hero__title rv" data-i18n-html="hero.title">Скажите <span class="hw-wrap">«<span class="hw" id="heroWord">Hello</span>»</span> — и&nbsp;вас поймут</h1>
+          <p class="hero__lead rv" data-i18n="hero.lead">Курсы 10 языков в центре Бишкека.</p>
+          <div class="hero__ctas rv">
+            <a class="btn btn--red btn--lg" href="#signup"><span data-i18n="cta.trial">Записаться на бесплатный урок</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn btn--ghost btn--lg" href="#signup" data-i18n="cta.test">Узнать свой уровень</a>
+          </div>
+          <p class="hero__note rv"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l4 4 10-10"/></svg><span data-i18n="hero.note">Первый урок — бесплатно и без обязательств</span></p>
+          <dl class="hero__stats rv">
+            <div><dt><span data-count="12">12</span></dt><dd data-i18n="st.s1">лет в Бишкеке</dd></div>
+            <div><dt><span data-count="4800">4800</span>+</dt><dd data-i18n="st.s2">выпускников</dd></div>
+            <div><dt><span data-count="6">6</span></dt><dd data-i18n="st.group">человек — максимум в группе</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero__visual rv">
+          <div class="word-card" aria-hidden="true">
+            <div class="word-card__chips">
+              <span lang="en">English</span><span lang="zh">中文</span><span lang="ko">한국어</span><span lang="de">Deutsch</span><span lang="ja">日本語</span><span lang="fr">Français</span><span lang="tr">Türkçe</span><span lang="ar" dir="rtl">العربية</span><span lang="es">Español</span>
+            </div>
+            <p class="word-card__label"><span data-i18n="hero.wordlabel">Слово «привет» на языке:</span> <b id="cardLang">английский</b></p>
+            <div class="word-card__word" id="cardWord">Hello</div>
+            <p class="word-card__tr" id="cardTr">[həˈləʊ]</p>
+            <div class="word-card__dots" id="cardDots"></div>
+          </div>
+          <div class="groups-card">
+            <p class="groups-card__title"><i aria-hidden="true"></i><span data-i18n="hero.card">Ближайшие группы</span></p>
+            <ul class="groups" id="groups">
+              <li data-start="2026-11-04" data-seats="2"><span class="groups__lang" data-i18n="l.en">Английский</span><span class="groups__lvl">A1</span><span class="groups__days" data-i18n="d.mw">Пн, Ср</span><span class="groups__time">19:00</span><span class="groups__start"></span><span class="groups__seats"></span></li>
+              <li data-start="2026-11-05" data-seats="3"><span class="groups__lang" data-i18n="l.ko">Корейский</span><span class="groups__lvl">A1</span><span class="groups__days" data-i18n="d.tt">Вт, Чт</span><span class="groups__time">18:30</span><span class="groups__start"></span><span class="groups__seats"></span></li>
+              <li data-start="2026-11-07" data-seats="1"><span class="groups__lang" data-i18n="l.de">Немецкий</span><span class="groups__lvl">A2</span><span class="groups__days" data-i18n="d.sat">Сб</span><span class="groups__time">10:00</span><span class="groups__start"></span><span class="groups__seats"></span></li>
+            </ul>
+            <a class="groups-card__more" href="#formats"><span data-i18n="hero.cardmore">Всё расписание</span> →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Greetings marquee -->
+    <div class="marquee" aria-hidden="true"><div class="marquee__track" id="marquee"></div></div>
+
+    <!-- WHY -->
+    <section class="section" id="why">
+      <div class="wrap">
+        <div class="head rv"><p class="kicker" data-i18n="why.kicker">Почему мы</p><h2 class="h2" data-i18n="why.title">Учиться понятно, удобно и с результатом</h2></div>
+        <div class="why">
+          <article class="why__item rv"><span class="ico"><svg viewBox="0 0 24 24"><circle cx="8" cy="9" r="3"/><circle cx="16" cy="9" r="3"/><path d="M3 19c.8-3 2.8-4.5 5-4.5s4.2 1.5 5 4.5M11 19c.8-3 2.8-4.5 5-4.5s4.2 1.5 5 4.5"/></svg></span><h3 data-i18n="w1.t">Маленькие группы</h3><p data-i18n="w1.d"></p></article>
+          <article class="why__item rv"><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l9 4-9 4-9-4 9-4z"/><path d="M7 9.5V14c0 1.7 2.2 3 5 3s5-1.3 5-3V9.5M21 7v6"/></svg></span><h3 data-i18n="w2.t">Опытные преподаватели</h3><p data-i18n="w2.d"></p></article>
+          <article class="why__item rv"><span class="ico"><svg viewBox="0 0 24 24"><path d="M4 19h16M6 16l4-5 3 3 5-7"/><path d="M15 7h3v3"/></svg></span><h3 data-i18n="w3.t">Прогресс, который видно</h3><p data-i18n="w3.d"></p></article>
+          <article class="why__item rv"><span class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M8 14h3"/></svg></span><h3 data-i18n="w4.t">Удобное расписание</h3><p data-i18n="w4.d"></p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LANGUAGES -->
+    <section class="section section--grey" id="languages">
+      <div class="wrap">
+        <div class="head rv"><p class="kicker" data-i18n="lg.kicker">Языки</p><h2 class="h2" data-i18n="lg.title">10 языков для учёбы, работы и путешествий</h2></div>
+        <ul class="lang-grid">
+          <li class="lang rv"><span class="lang__native" lang="en">English</span><span class="lang__name" data-i18n="l.en"></span><span class="lang__meta"><span>A1–C2 · IELTS</span><b data-i18n="lg.p1"></b></span><span class="lang__tag" data-i18n="lg.popular">Популярный</span></li>
+          <li class="lang rv"><span class="lang__native" lang="ko">한국어</span><span class="lang__name" data-i18n="l.ko"></span><span class="lang__meta"><span>TOPIK I–II</span><b data-i18n="lg.p2"></b></span><span class="lang__tag" data-i18n="lg.popular">Популярный</span></li>
+          <li class="lang rv"><span class="lang__native" lang="zh">中文</span><span class="lang__name" data-i18n="l.zh"></span><span class="lang__meta"><span>HSK 1–6</span><b data-i18n="lg.p2"></b></span></li>
+          <li class="lang rv"><span class="lang__native" lang="de">Deutsch</span><span class="lang__name" data-i18n="l.de"></span><span class="lang__meta"><span>A1–C2 · Goethe</span><b data-i18n="lg.p1"></b></span></li>
+          <li class="lang rv"><span class="lang__native" lang="tr">Türkçe</span><span class="lang__name" data-i18n="l.tr"></span><span class="lang__meta"><span>A1–C1</span><b data-i18n="lg.p1"></b></span></li>
+          <li class="lang rv"><span class="lang__native" lang="ja">日本語</span><span class="lang__name" data-i18n="l.ja"></span><span class="lang__meta"><span>JLPT N5–N1</span><b data-i18n="lg.p2"></b></span></li>
+          <li class="lang rv"><span class="lang__native" lang="fr">Français</span><span class="lang__name" data-i18n="l.fr"></span><span class="lang__meta"><span>A1–C2 · DELF</span><b data-i18n="lg.p1"></b></span></li>
+          <li class="lang rv"><span class="lang__native" lang="es">Español</span><span class="lang__name" data-i18n="l.es"></span><span class="lang__meta"><span>A1–C2 · DELE</span><b data-i18n="lg.p1"></b></span></li>
+          <li class="lang rv"><span class="lang__native" lang="ar" dir="rtl">العربية</span><span class="lang__name" data-i18n="l.ar"></span><span class="lang__meta"><span>A1–C1</span><b data-i18n="lg.p2"></b></span></li>
+          <li class="lang rv"><span class="lang__native" lang="ru">Русский</span><span class="lang__name" data-i18n="l.ru"></span><span class="lang__meta"><span>A1–C1 · ТРКИ</span><b data-i18n="lg.p1"></b></span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FORMATS + TIMETABLE -->
+    <section class="section" id="formats">
+      <div class="wrap">
+        <div class="head rv"><p class="kicker" data-i18n="fm.kicker">Форматы и расписание</p><h2 class="h2" data-i18n="fm.title">Выберите, как вам удобнее учиться</h2></div>
+        <div class="tabs rv">
+          <div class="tabs__list" role="tablist">
+            <button role="tab" id="tab-g" aria-controls="pan-g" aria-selected="true" data-i18n="tab.group">В группе</button>
+            <button role="tab" id="tab-p" aria-controls="pan-p" aria-selected="false" tabindex="-1" data-i18n="tab.private">Индивидуально</button>
+            <button role="tab" id="tab-k" aria-controls="pan-k" aria-selected="false" tabindex="-1" data-i18n="tab.kids">Детям 6–16</button>
+            <button role="tab" id="tab-c" aria-controls="pan-c" aria-selected="false" tabindex="-1" data-i18n="tab.corp">Компаниям</button>
+            <button role="tab" id="tab-e" aria-controls="pan-e" aria-selected="false" tabindex="-1" data-i18n="tab.exam">IELTS / TOEFL</button>
+            <span class="tabs__ink" aria-hidden="true"></span>
+          </div>
+          <div class="tabs__panels">
+            <div class="panel is-on" role="tabpanel" id="pan-g" aria-labelledby="tab-g"><p class="panel__d" data-i18n="pg.d"></p><dl class="facts"><div><dt data-i18n="f.dur"></dt><dd data-i18n="pg.dur"></dd></div><div><dt data-i18n="f.when"></dt><dd data-i18n="pg.when"></dd></div><div><dt data-i18n="f.price"></dt><dd class="red" data-i18n="pg.price"></dd></div></dl><a class="btn btn--red" href="#signup" data-i18n="cta.trial">Записаться на бесплатный урок</a></div>
+            <div class="panel" role="tabpanel" id="pan-p" aria-labelledby="tab-p" hidden><p class="panel__d" data-i18n="pp.d"></p><dl class="facts"><div><dt data-i18n="f.dur"></dt><dd data-i18n="pp.dur"></dd></div><div><dt data-i18n="f.when"></dt><dd data-i18n="pp.when"></dd></div><div><dt data-i18n="f.price"></dt><dd class="red" data-i18n="pp.price"></dd></div></dl><a class="btn btn--red" href="#signup" data-i18n="cta.trial">Записаться на бесплатный урок</a></div>
+            <div class="panel" role="tabpanel" id="pan-k" aria-labelledby="tab-k" hidden><p class="panel__d" data-i18n="pk.d"></p><dl class="facts"><div><dt data-i18n="f.dur"></dt><dd data-i18n="pk.dur"></dd></div><div><dt data-i18n="f.when"></dt><dd data-i18n="pk.when"></dd></div><div><dt data-i18n="f.price"></dt><dd class="red" data-i18n="pk.price"></dd></div></dl><a class="btn btn--red" href="#signup" data-i18n="cta.trial">Записаться на бесплатный урок</a></div>
+            <div class="panel" role="tabpanel" id="pan-c" aria-labelledby="tab-c" hidden><p class="panel__d" data-i18n="pc.d"></p><dl class="facts"><div><dt data-i18n="f.dur"></dt><dd data-i18n="pc.dur"></dd></div><div><dt data-i18n="f.when"></dt><dd data-i18n="pc.when"></dd></div><div><dt data-i18n="f.price"></dt><dd class="red" data-i18n="pc.price"></dd></div></dl><a class="btn btn--red" href="#signup" data-i18n="cta.signup">Записаться</a></div>
+            <div class="panel" role="tabpanel" id="pan-e" aria-labelledby="tab-e" hidden><p class="panel__d" data-i18n="pe.d"></p><dl class="facts"><div><dt data-i18n="f.dur"></dt><dd data-i18n="pe.dur"></dd></div><div><dt data-i18n="f.when"></dt><dd data-i18n="pe.when"></dd></div><div><dt data-i18n="f.price"></dt><dd class="red" data-i18n="pe.price"></dd></div></dl><a class="btn btn--red" href="#signup" data-i18n="cta.trial">Записаться на бесплатный урок</a></div>
+          </div>
+        </div>
+
+        <div class="timetable rv">
+          <h3 class="h3" data-i18n="sc.title">Расписание групп</h3>
+          <div class="timetable__scroll" tabindex="0">
+            <table>
+              <thead><tr><th scope="col" data-i18n="sc.time">Время</th><th scope="col"></th><th scope="col" data-i18n="day.mon">Пн</th><th scope="col" data-i18n="day.tue">Вт</th><th scope="col" data-i18n="day.wed">Ср</th><th scope="col" data-i18n="day.thu">Чт</th><th scope="col" data-i18n="day.fri">Пт</th><th scope="col" data-i18n="day.sat">Сб</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">10:00</th><td data-i18n="sc.r1"></td><td><i class="on"></i></td><td></td><td><i class="on"></i></td><td></td><td><i class="on"></i></td><td></td></tr>
+                <tr><th scope="row">15:30</th><td data-i18n="sc.r2"></td><td></td><td><i class="on"></i></td><td></td><td><i class="on"></i></td><td></td><td></td></tr>
+                <tr><th scope="row">18:30</th><td data-i18n="sc.r3"></td><td></td><td><i class="on"></i></td><td></td><td><i class="on"></i></td><td></td><td></td></tr>
+                <tr><th scope="row">19:00</th><td data-i18n="sc.r4"></td><td><i class="on"></i></td><td></td><td><i class="on"></i></td><td></td><td></td><td></td></tr>
+                <tr><th scope="row">10:00 · 12:00</th><td data-i18n="sc.r5"></td><td></td><td></td><td></td><td></td><td></td><td><i class="on"></i></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="fine" data-i18n="sc.note">Точное расписание по каждому языку подскажет администратор.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEPS -->
+    <section class="section section--grey" id="how">
+      <div class="wrap">
+        <div class="head rv"><p class="kicker" data-i18n="hw.kicker">Как начать</p><h2 class="h2" data-i18n="hw.title">Три шага до первого урока</h2></div>
+        <ol class="steps">
+          <li class="step rv"><span class="step__n">1</span><h3 data-i18n="s1.t"></h3><p data-i18n="s1.d"></p></li>
+          <li class="step rv"><span class="step__n">2</span><h3 data-i18n="s2.t"></h3><p data-i18n="s2.d"></p></li>
+          <li class="step rv"><span class="step__n">3</span><h3 data-i18n="s3.t"></h3><p data-i18n="s3.d"></p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PRICES -->
+    <section class="section" id="prices">
+      <div class="wrap">
+        <div class="head rv"><p class="kicker" data-i18n="pr.kicker">Цены</p><h2 class="h2" data-i18n="pr.title">Честные цены без скрытых платежей</h2></div>
+        <div class="prices">
+          <article class="price price--hot rv">
+            <span class="price__badge" data-i18n="pr.badge">Чаще всего выбирают</span>
+            <h3 data-i18n="pr.t1">Группа</h3>
+            <p class="price__sum"><small data-i18n="pr.from">от</small> <b>6 900</b> <small data-i18n="pr.month">сом / месяц</small></p>
+            <ul><li data-i18n="pr.t1.f1"></li><li data-i18n="pr.t1.f2"></li><li data-i18n="pr.t1.f3"></li></ul>
+            <a class="btn btn--white btn--block" href="#signup" data-i18n="pr.choose">Записаться</a>
+          </article>
+          <article class="price rv">
+            <h3 data-i18n="pr.t2">Индивидуально</h3>
+            <p class="price__sum"><small data-i18n="pr.from">от</small> <b>1 500</b> <small data-i18n="pr.lesson">сом / урок</small></p>
+            <ul><li data-i18n="pr.t2.f1"></li><li data-i18n="pr.t2.f2"></li><li data-i18n="pr.t2.f3"></li></ul>
+            <a class="btn btn--ghost btn--block" href="#signup" data-i18n="pr.choose">Записаться</a>
+          </article>
+          <article class="price rv">
+            <h3 data-i18n="pr.t3">Детская группа</h3>
+            <p class="price__sum"><small data-i18n="pr.from">от</small> <b>5 900</b> <small data-i18n="pr.month">сом / месяц</small></p>
+            <ul><li data-i18n="pr.t3.f1"></li><li data-i18n="pr.t3.f2"></li><li data-i18n="pr.t3.f3"></li></ul>
+            <a class="btn btn--ghost btn--block" href="#signup" data-i18n="pr.choose">Записаться</a>
+          </article>
+          <article class="price rv">
+            <h3 data-i18n="pr.t4">IELTS / TOEFL</h3>
+            <p class="price__sum"><small data-i18n="pr.from">от</small> <b>12 900</b> <small data-i18n="pr.month">сом / месяц</small></p>
+            <ul><li data-i18n="pr.t4.f1"></li><li data-i18n="pr.t4.f2"></li><li data-i18n="pr.t4.f3"></li></ul>
+            <a class="btn btn--ghost btn--block" href="#signup" data-i18n="pr.choose">Записаться</a>
+          </article>
+        </div>
+        <p class="note rv"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12l-8 8-9-9V3h8z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg><span data-i18n="pr.note"></span></p>
+      </div>
+    </section>
+
+    <!-- STATS BAND -->
+    <section class="band" id="results">
+      <div class="wrap band__in">
+        <div class="band__stat rv"><b><span data-count="12">12</span></b><span data-i18n="st.s1"></span></div>
+        <div class="band__stat rv"><b><span data-count="4800">4800</span>+</b><span data-i18n="st.s2"></span></div>
+        <div class="band__stat rv"><b><span data-count="96">96</span>%</b><span data-i18n="st.s3"></span></div>
+        <div class="band__stat rv"><b><span data-count="7.5" data-decimals="1">7.5</span></b><span data-i18n="st.s4"></span></div>
+      </div>
+    </section>
+
+    <!-- TEACHERS -->
+    <section class="section" id="teachers">
+      <div class="wrap">
+        <div class="head rv"><p class="kicker" data-i18n="tc.kicker">Преподаватели</p><h2 class="h2" data-i18n="tc.title">Учат те, кто сам говорит на языке свободно</h2></div>
+        <div class="teachers">
+          <article class="teacher rv"><span class="avatar" data-initials="AR" data-tone="1" aria-hidden="true"></span><h3 data-i18n="t1.n"></h3><p class="teacher__r" data-i18n="t1.r"></p><p class="teacher__x" data-exp="12"></p></article>
+          <article class="teacher rv"><span class="avatar" data-initials="TA" data-tone="2" aria-hidden="true"></span><h3 data-i18n="t2.n"></h3><p class="teacher__r" data-i18n="t2.r"></p><p class="teacher__x" data-exp="14"></p></article>
+          <article class="teacher rv"><span class="avatar" data-initials="한" data-tone="3" aria-hidden="true"></span><h3 data-i18n="t3.n"></h3><p class="teacher__r" data-i18n="t3.r"></p><p class="teacher__x" data-exp="9"></p></article>
+          <article class="teacher rv"><span class="avatar" data-initials="花" data-tone="4" aria-hidden="true"></span><h3 data-i18n="t4.n"></h3><p class="teacher__r" data-i18n="t4.r"></p><p class="teacher__x" data-exp="10"></p></article>
+          <article class="teacher rv"><span class="avatar" data-initials="LH" data-tone="5" aria-hidden="true"></span><h3 data-i18n="t5.n"></h3><p class="teacher__r" data-i18n="t5.r"></p><p class="teacher__x" data-exp="11"></p></article>
+          <article class="teacher rv"><span class="avatar" data-initials="AT" data-tone="6" aria-hidden="true"></span><h3 data-i18n="t6.n"></h3><p class="teacher__r" data-i18n="t6.r"></p><p class="teacher__x" data-exp="8"></p></article>
+        </div>
+        <p class="fine" data-i18n="tc.note">Имена приведены для примера.</p>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section section--grey" id="reviews">
+      <div class="wrap">
+        <div class="head rv"><p class="kicker" data-i18n="rv.kicker">Отзывы</p><h2 class="h2" data-i18n="rv.title">Что говорят студенты и родители</h2></div>
+        <div class="reviews">
+          <figure class="review rv"><span class="stars" aria-hidden="true">★★★★★</span><blockquote data-i18n="rv.q1"></blockquote><figcaption data-i18n="rv.a1"></figcaption></figure>
+          <figure class="review rv"><span class="stars" aria-hidden="true">★★★★★</span><blockquote data-i18n="rv.q2"></blockquote><figcaption data-i18n="rv.a2"></figcaption></figure>
+          <figure class="review rv"><span class="stars" aria-hidden="true">★★★★★</span><blockquote data-i18n="rv.q3"></blockquote><figcaption data-i18n="rv.a3"></figcaption></figure>
+        </div>
+        <p class="fine" data-i18n="rv.note"></p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="wrap faq-wrap">
+        <div class="head rv"><p class="kicker" data-i18n="faq.kicker">Вопросы и ответы</p><h2 class="h2" data-i18n="faq.title">Частые вопросы</h2></div>
+        <div class="faq">
+          <details class="rv"><summary data-i18n="faq.q1"></summary><div class="faq__a"><p data-i18n="faq.a1"></p></div></details>
+          <details class="rv"><summary data-i18n="faq.q2"></summary><div class="faq__a"><p data-i18n="faq.a2"></p></div></details>
+          <details class="rv"><summary data-i18n="faq.q3"></summary><div class="faq__a"><p data-i18n="faq.a3"></p></div></details>
+          <details class="rv"><summary data-i18n="faq.q4"></summary><div class="faq__a"><p data-i18n="faq.a4"></p></div></details>
+          <details class="rv"><summary data-i18n="faq.q5"></summary><div class="faq__a"><p data-i18n="faq.a5"></p></div></details>
+          <details class="rv"><summary data-i18n="faq.q6"></summary><div class="faq__a"><p data-i18n="faq.a6"></p></div></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIGN-UP -->
+    <section class="signup" id="signup">
+      <div class="wrap signup__grid">
+        <div class="signup__copy rv">
+          <p class="kicker kicker--light" data-i18n="su.kicker">Запись</p>
+          <h2 class="h2" data-i18n="su.title">Запишитесь на бесплатный пробный урок</h2>
+          <p class="signup__lead" data-i18n="su.lead"></p>
+          <ul class="ticks"><li data-i18n="su.p1"></li><li data-i18n="su.p2"></li><li data-i18n="su.p3"></li></ul>
+          <p class="signup__or" data-i18n="su.or">Или напишите нам напрямую</p>
+          <div class="msgr">
+            <a class="msgr__btn" href="#signup"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1c-1-.4-1.6-1-2-2l1-1-1-2z"/></svg>WhatsApp</a>
+            <a class="msgr__btn" href="#signup"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 4L3 11l6 2 2 6 3-4 5 4z"/><path d="M9 13l8-6"/></svg>Telegram</a>
+            <a class="msgr__btn" href="tel:+996312900000"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span data-i18n="su.call">Позвонить</span></a>
+          </div>
+        </div>
+
+        <form class="form rv" id="form" novalidate>
+          <div class="field"><label for="fName" data-i18n="fm.name">Ваше имя</label><input id="fName" name="name" type="text" autocomplete="name" required><span class="err" data-err="name"></span></div>
+          <div class="field"><label for="fPhone" data-i18n="fm.phone">Телефон или WhatsApp</label><input id="fPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+996 ___ ___ ___" required><span class="err" data-err="phone"></span></div>
+          <div class="field-row">
+            <div class="field"><label for="fLang" data-i18n="fm.language">Язык</label>
+              <select id="fLang" name="language"><option value="" data-i18n="fm.select">Выберите</option><option data-i18n="l.en"></option><option data-i18n="l.ko"></option><option data-i18n="l.zh"></option><option data-i18n="l.de"></option><option data-i18n="l.tr"></option><option data-i18n="l.ja"></option><option data-i18n="l.fr"></option><option data-i18n="l.es"></option><option data-i18n="l.ar"></option><option data-i18n="l.ru"></option></select></div>
+            <div class="field"><label for="fFormat" data-i18n="fm.format">Формат</label>
+              <select id="fFormat" name="format"><option value="" data-i18n="fm.select">Выберите</option><option data-i18n="tab.group"></option><option data-i18n="tab.private"></option><option data-i18n="tab.kids"></option><option data-i18n="tab.corp"></option><option data-i18n="tab.exam"></option></select></div>
+          </div>
+          <fieldset class="field chips"><legend data-i18n="fm.time">Удобное время</legend>
+            <label><input type="radio" name="time" value="m"><span data-i18n="time.m">Утро</span></label>
+            <label><input type="radio" name="time" value="d"><span data-i18n="time.d">День</span></label>
+            <label><input type="radio" name="time" value="e" checked><span data-i18n="time.e">Вечер</span></label>
+            <label><input type="radio" name="time" value="w"><span data-i18n="time.w">Выходные</span></label>
+          </fieldset>
+          <label class="check"><input type="checkbox" id="fConsent" name="consent"><span class="check__box" aria-hidden="true"></span><span data-i18n="fm.consent">Согласен(на) на обработку персональных данных</span></label>
+          <span class="err" data-err="consent"></span>
+          <button class="btn btn--red btn--lg btn--block" type="submit"><span data-i18n="fm.submit">Записаться бесплатно</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <p class="fine" data-i18n="fm.demo">Демо-форма: данные никуда не отправляются.</p>
+          <div class="form__ok" id="formOk" hidden tabindex="-1">
+            <span class="form__ok-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></span>
+            <p class="form__ok-word" id="okWord" aria-hidden="true">Рахмат!</p>
+            <p class="form__ok-title" data-i18n="fm.ok.title">Спасибо! Заявка принята</p>
+            <p data-i18n="fm.ok.text"></p>
+            <button type="button" class="link" id="formAgain" data-i18n="fm.ok.again">Отправить ещё одну заявку</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- CONTACTS -->
+    <section class="section" id="contact">
+      <div class="wrap contact">
+        <div class="contact__info rv">
+          <p class="kicker" data-i18n="ct.kicker">Контакты</p>
+          <h2 class="h2" data-i18n="ct.title">Ждём вас в центре Бишкека</h2>
+          <dl class="contact__list">
+            <div><dt data-i18n="ct.address.l">Адрес</dt><dd data-i18n="top.addr"></dd></div>
+            <div><dt data-i18n="ct.hours.l">Часы работы</dt><dd data-i18n="top.hours"></dd></div>
+            <div><dt data-i18n="ct.phone.l">Телефон</dt><dd><a href="tel:+996312900000">+996 312 90 00 00</a></dd></div>
+            <div><dt data-i18n="ct.mail.l">Почта</dt><dd><a href="mailto:hello@maison-babel.example">hello@maison-babel.example</a></dd></div>
+          </dl>
+          <div class="msgr msgr--dark">
+            <a class="msgr__btn" href="#signup">WhatsApp</a><a class="msgr__btn" href="#signup">Telegram</a><a class="msgr__btn" href="#signup">Instagram</a>
+          </div>
+        </div>
+        <div class="map rv" aria-hidden="true">
+          <svg viewBox="0 0 600 440" preserveAspectRatio="xMidYMid slice">
+            <rect width="600" height="440" fill="#f4f2ef"/>
+            <g fill="#ebe7e2"><rect x="30" y="30" width="150" height="110" rx="6"/><rect x="200" y="30" width="170" height="110" rx="6"/><rect x="390" y="30" width="180" height="110" rx="6"/><rect x="30" y="170" width="150" height="120" rx="6"/><rect x="390" y="170" width="180" height="120" rx="6"/><rect x="30" y="320" width="150" height="100" rx="6"/><rect x="200" y="320" width="170" height="100" rx="6"/><rect x="390" y="320" width="180" height="100" rx="6"/></g>
+            <rect x="200" y="170" width="170" height="120" rx="6" fill="#e3ecdf"/>
+            <g stroke="#fff" stroke-width="14"><path d="M0 155H600M0 305H600M190 0V440M380 0V440"/></g>
+            <path d="M285 0V440" stroke="#fff" stroke-width="22"/><path d="M285 0V440" stroke="#e7e2dc" stroke-width="2" stroke-dasharray="10 10"/>
+            <g class="map__pin"><circle cx="285" cy="230" r="34" fill="#c8102e" opacity=".14"/><path d="M285 252s-20-17-20-32a20 20 0 0 1 40 0c0 15-20 32-20 32z" fill="#c8102e"/><circle cx="285" cy="220" r="7" fill="#fff"/></g>
+          </svg>
+          <span class="map__label" data-i18n="ct.pin">Мы здесь</span>
+          <a class="btn btn--white btn--sm map__btn" href="#contact" data-i18n="ct.map">Открыть на карте</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__in">
+      <span class="logo logo--light"><span class="logo__mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M9 22h14M11 18h10M13 14h6M15 10h2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span><span class="logo__text">Maison Babel</span></span>
+      <p data-i18n="ft.rights">© 2026 Maison Babel.</p>
+      <a href="#top" data-i18n="ft.top">Наверх</a>
+    </div>
+  </footer>
+
+  <!-- Mobile sticky CTA -->
+  <div class="mbar" id="mbar">
+    <a class="btn btn--red" href="#signup" data-i18n="mb.signup">Бесплатный урок</a>
+    <a class="mbar__wa" href="#signup" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1c-1-.4-1.6-1-2-2l1-1-1-2z"/></svg></a>
+  </div>
+
+  <script defer src="assets/js/i18n.js"></script>
+  <script defer src="assets/js/main.js"></script>
+</body>
+</html>
